@@ -1,0 +1,18 @@
+<h1>All our flats (<%=@flats.length%>)</h1>
+<div class="grid">
+  <%@flats.each do |flat| %>
+    <div class="card">
+      <div class="cardheader">
+        <p><%=flat.name%></p>
+        <p><%=flat.address%></p>
+        <p><i class="tiny material-icons">euro_symbol</i> <%=flat.price_per_night%></p>
+        <p><i class="tiny material-icons">people</i> <%=flat.number_of_guests%></p>
+      </div>
+      <div>
+
+      </div class="cardfooter">
+        <a href="#">More info</a>
+    </div>
+<%end%>
+</div>
+

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://kit.fontawesome.com/0f526d3d11.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +12,12 @@
   </head>
 
   <body>
+    <nav>
+      <div class="navbar">
+        <p>Simple Airbnb</p>
+        <a href="#" class="button" >Add a flat</a>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
